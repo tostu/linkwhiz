@@ -1,9 +1,9 @@
 {
-	"name": "wind-starter-kit",
+	"name": "linkwhiz",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "./pocketbase/pocketbase serve & vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
@@ -23,6 +23,7 @@
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^7.0.0",
 		"autoprefixer": "^10.4.19",
+		"daisyui": "^4.11.1",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
@@ -39,5 +40,11 @@
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fontsource/berkshire-swash": "^5.0.20",
+		"pocketbase": "^0.21.2",
+		"theme-change": "^2.5.0",
+		"wretch": "^2.8.1"
+	}
 }
