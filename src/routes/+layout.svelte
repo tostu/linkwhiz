@@ -1,41 +1,43 @@
 <script>
 	import '../app.css';
+	import { Layout } from 'tostulib-svelte';
 	import Navbar from '$lib/component/Navbar.svelte';
 
-	import { onMount } from 'svelte'
-	import { themeChange } from 'theme-change'
+	import { onMount } from 'svelte';
+	import { themeChange } from 'theme-change';
 
 	// NOTE: the element that is using one of the theme attributes must be in the DOM on mount
 	onMount(() => {
-		themeChange(false)
+		themeChange(false);
 		// 👆 false parameter is required for svelte
-	})
+	});
 </script>
 
-<div class="app min-h-screen">
-	<div class=" w-full p-2 lg:p-6 mb-20 md:mb-24 max-w-4xl mx-auto">
-		<header>
-			<nav>
-				<Navbar/>
-			</nav>
-		</header>
+<Layout>
+	<header slot="header">
+		<nav>
+			<Navbar />
+		</nav>
+	</header>
 
-		<main>
-			<slot />
-		</main>
-
-	</div>
-
-
-	<footer class="footer footer-center p-4 bg-base-300 text-base-content fixed bottom-0">
+	<main
+		slot="main"
+		class="mx-auto mb-20 flex min-h-full w-full max-w-4xl flex-grow flex-col p-2 md:mb-24 lg:p-6"
+	>
+		<slot />
+	</main>
+	<footer
+		slot="footer"
+		class="footer footer-center fixed bottom-0 bg-base-300 p-4 text-base-content"
+	>
 		<div>
 			<p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
 		</div>
 	</footer>
-</div>
+</Layout>
 
 <style lang="postcss">
-    :global(html) {
-        background-color: oklch(var(--b2)) !important;
-    }
+	:global(html) {
+		background-color: oklch(var(--b2)) !important;
+	}
 </style>
