@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "./pocketbase/pocketbase serve & vite dev",
-		"build": "vite build",
+		"build": "npm run typegen && vite build",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -12,7 +12,8 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"test:unit": "vitest",
+		"typegen": "pocketbase-typegen --db ./pocketbase/pb_data/data.db -o ./src/lib/pocketbase-types.ts"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
@@ -44,6 +45,7 @@
 	"dependencies": {
 		"@fontsource/berkshire-swash": "^5.0.20",
 		"pocketbase": "^0.21.2",
+		"pocketbase-typegen": "^1.2.1",
 		"theme-change": "^2.5.0",
 		"wretch": "^2.8.1"
 	}
