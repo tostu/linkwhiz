@@ -22,7 +22,7 @@
 
 	<main
 		slot="main"
-		class="mx-auto mb-20 flex min-h-full w-full max-w-4xl flex-grow flex-col p-2 md:mb-24 lg:p-6"
+		class="mx-auto mb-20 flex min-h-full w-full max-w-xl flex-grow flex-col md:mb-24"
 	>
 		<slot />
 	</main>

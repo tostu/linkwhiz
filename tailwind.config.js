@@ -8,7 +8,7 @@ export default {
 		themes: [
 			{
 				linkWhiz: {
-					primary: '#2563eb',
+					primary: '#1C71D8',
 					'primary-content': '#f3f4f6',
 					secondary: '#4791FF',
 					'secondary-content': '#f3f4f6',

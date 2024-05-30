@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="navbar mx-auto mb-4 mt-4 max-w-[40rem] select-none rounded-box bg-base-100 shadow-lg md:mb-6"
+	class="navbar mx-auto mb-4 mt-4 max-w-xl select-none rounded-box bg-base-100 shadow-lg md:mb-6"
 >
 	<div class="navbar-start">
 		<a href="/">
