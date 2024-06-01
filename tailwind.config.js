@@ -8,29 +8,25 @@ export default {
 		themes: [
 			{
 				linkWhiz: {
-					primary: '#1C71D8',
+					primary: '#0d1f2d',
 					'primary-content': '#f3f4f6',
-					secondary: '#4791FF',
+					secondary: '#009cf9',
 					'secondary-content': '#f3f4f6',
-					accent: '#FFD700',
+					accent: '#e49d23',
 					'accent-content': '#1f2937',
-					neutral: '#F9F9FB',
+					neutral: '#f0fbff',
 					'neutral-content': '#151515',
-					'base-100': '#F4F4F6',
-					'base-200': '#d4d4d6',
-					'base-300': '#b5b5b7',
-					'base-content': '#141415',
-					info: '#17A2B8',
+					'base-100': '#374652',
+					info: '#17a2b8',
 					'info-content': '#f3f4f6',
-					success: '#28A745',
+					success: '#75af49',
 					'success-content': '#f3f4f6',
-					warning: '#FFC107',
+					warning: '#f39f11',
 					'warning-content': '#140c00',
-					error: '#DC3545',
+					error: '#f44336',
 					'error-content': '#f3f4f6'
 				}
-			},
-			'dark'
+			}
 		]
 	},
 	plugins: [require('daisyui')]
