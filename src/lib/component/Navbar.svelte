@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="navbar mx-auto mb-4 mt-4 max-w-xl select-none rounded-box bg-base-100 shadow-lg md:mb-6"
+	class="navbar mx-auto mb-4 mt-4 max-w-xl select-none rounded-box bg-base-300 shadow-lg md:mb-6"
 >
 	<div class="navbar-start">
 		<a href="/">
@@ -20,9 +20,7 @@
 		</a>
 	</div>
 	<div class="navbar-center">
-		<div id="title" class=" \ text-center text-3xl text-neutral-700 dark:text-neutral-200">
-			LinkWhiz
-		</div>
+		<div id="title" class=" \ text-center text-3xl text-neutral-200">LinkWhiz</div>
 	</div>
 	<div class="navbar-end">
 		<!--		<ThemeController/>-->
