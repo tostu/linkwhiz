@@ -1,4 +1,4 @@
-import pb from '$lib/pocketbase';
+import pb from '$lib/server/pocketbase';
 import { redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
