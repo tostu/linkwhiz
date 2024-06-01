@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData, ActionData } from './$types';
+	import type { ActionData } from './$types';
 
 	import Magic from 'virtual:icons/jam/magic';
 	import GlowText from '$lib/component/GlowText.svelte';
@@ -9,9 +9,11 @@
 
 	async function copyLink() {
 		try {
-			await navigator.clipboard.writeText(form?.destination);
-			copied = true;
-			hideTimer();
+			if (form?.destination) {
+				await navigator.clipboard.writeText(form?.destination);
+				copied = true;
+				hideTimer();
+			}
 		} catch (err) {
 			console.error('Failed to copy text: ', err);
 		}
